@@ -1,0 +1,14 @@
+version: "3"
+services:
+  pyspark:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - SPARK_VERSION=2.4.8
+      - PYSPARK_PYTHON=python3.6
+    volumes:
+      - C:/Users/VioletaReimer/Desktop/docker-test:/home/jovyan 
+    ports:
+      - 8888:8888
+
