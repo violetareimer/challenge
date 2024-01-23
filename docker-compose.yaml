@@ -6,7 +6,6 @@ services:
       dockerfile: Dockerfile
     environment:
       - SPARK_VERSION=2.4.8
-      - PYSPARK_PYTHON=python3.6
     volumes:
       - C:/Users/VioletaReimer/Desktop/docker-test:/home/jovyan 
     ports:

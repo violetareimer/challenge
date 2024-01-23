@@ -2,5 +2,10 @@
 
 FROM jupyter/all-spark-notebook:latest
 
+# Install Python 3.6
+RUN apt-get update && apt-get install -y python3.6
+
 # Install additional libraries
-RUN pip install -r requirements.txt
+COPY ./requirements.txt /
+RUN pip install -r /requirements.txt
+#RUN pip install -r /requirements.txt
